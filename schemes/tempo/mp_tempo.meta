@@ -106,7 +106,7 @@
   intent = in
 [ tempo_cfgs ]
   standard_name = configuration_for_tempo_microphysics
-  units = mixed
+  units = none
   type = ty_tempo_cfgs
   dimensions = ()
   intent = out
@@ -293,7 +293,7 @@
   advected = True
 [ tempo_cfgs ]
   standard_name = configuration_for_tempo_microphysics
-  units = mixed
+  units = none
   type = ty_tempo_cfgs
   dimensions = ()
   intent = in
