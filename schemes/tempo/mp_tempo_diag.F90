@@ -46,15 +46,15 @@ contains
             'lev', 'avg', 'dBZ')
         call history_add_field( &
             'mp_tempo_re_cloud', &
-            'effective_radius_of_stratiform_cloud_liquid_water_particle', &
+            'effective_radius_of_stratiform_cloud_liquid_water_droplet', &
             'lev', 'avg', 'um')
         call history_add_field( &
             'mp_tempo_re_ice', &
-            'effective_radius_of_stratiform_cloud_ice_particle', &
+            'effective_radius_of_stratiform_cloud_ice_crystal', &
             'lev', 'avg', 'um')
         call history_add_field( &
             'mp_tempo_re_snow', &
-            'effective_radius_of_stratiform_cloud_snow_particle', &
+            'effective_radius_of_stratiform_cloud_snow_crystal', &
             'lev', 'avg', 'um')
 
         errmsg = ''
