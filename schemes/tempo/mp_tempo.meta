@@ -231,7 +231,7 @@
   dimensions = (horizontal_loop_extent, vertical_layer_dimension)
   intent = in
 [ nr ]
-  standard_name = mass_number_concentration_of_rain_in_dry_air
+  standard_name = mass_number_concentration_of_rain_drops_in_dry_air
   units = kg-1
   type = real | kind = kind_phys
   dimensions = (horizontal_loop_extent, vertical_layer_dimension)
@@ -278,7 +278,7 @@
   dimensions = (horizontal_loop_extent)
   intent = inout
 [ ng ]
-  standard_name = mass_number_concentration_of_graupel_in_dry_air
+  standard_name = mass_number_concentration_of_graupel_particles_in_dry_air
   units = kg-1
   type = real | kind = kind_phys
   dimensions = (horizontal_loop_extent, vertical_layer_dimension)
@@ -370,7 +370,7 @@
   dimensions = (horizontal_loop_extent, vertical_layer_dimension)
   intent = out
 [ tend_nr ]
-  standard_name = tendency_of_mass_number_concentration_of_rain_in_dry_air_due_to_microphysics
+  standard_name = tendency_of_mass_number_concentration_of_rain_drops_in_dry_air_due_to_microphysics
   units = kg-1 s-1
   type = real | kind = kind_phys
   dimensions = (horizontal_loop_extent, vertical_layer_dimension)
@@ -431,7 +431,7 @@
   dimensions = (horizontal_loop_extent, vertical_layer_dimension)
   intent = out
 [ tend_ng ]
-  standard_name = tendency_of_mass_number_concentration_of_graupel_in_dry_air_due_to_microphysics
+  standard_name = tendency_of_mass_number_concentration_of_graupel_particles_in_dry_air_due_to_microphysics
   units = kg-1 s-1
   type = real | kind = kind_phys
   dimensions = (horizontal_loop_extent, vertical_layer_dimension)
