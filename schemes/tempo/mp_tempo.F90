@@ -33,7 +33,7 @@ contains
         ! Check for logic errors in namelist options.
 
         if (num_subcyc < 1) then
-            errmsg = 'num_subcyc must be positive.'
+            errmsg = '"num_subcyc" must be positive for TEMPO microphysics.'
             errflg = 1
 
             return
@@ -41,7 +41,8 @@ contains
 
         if (sat_adj) then
             if (aerosol_aware .or. hail_aware) then
-                errmsg = 'sat_adj=.true. should only be run with aerosol_aware=.false. and hail_aware=.false.'
+                errmsg = '"sat_adj=.true." should only be run with "aerosol_aware=.false." and "hail_aware=.false."' // &
+                    ' for TEMPO microphysics.'
                 errflg = 1
 
                 return
