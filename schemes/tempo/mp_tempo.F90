@@ -187,10 +187,13 @@ contains
 
                     nwfa2d(i) = nwfa(i, 1) * 0.000196_kind_phys * (50.0_kind_phys / dz_r1(i, 1, 1))
                 end do
+
+                ! Flip upside down to be consistent with CAM-SIMA. Index 1 is at the top of atmosphere.
+                nwfa(:, :) = nwfa(:, pver:1:-1)
             else
                 if (maxval(nwfa2d) < eps) then
                     do i = 1, ncol
-                        nwfa2d(i) = nwfa(i, 1) * 0.000196_kind_phys * (5.0_kind_phys / dz_r1(i, 1, 1))
+                        nwfa2d(i) = nwfa(i, pver) * 0.000196_kind_phys * (5.0_kind_phys / dz_r1(i, 1, 1))
                     end do
                 end if
             end if
@@ -202,9 +205,12 @@ contains
 
                     nifa2d(i) = 0.0_kind_phys
                 end do
+
+                ! Flip upside down to be consistent with CAM-SIMA. Index 1 is at the top of atmosphere.
+                nifa(:, :) = nifa(:, pver:1:-1)
             else
                 if (maxval(nifa2d) < eps) then
-                    nifa2d = 0.0_kind_phys
+                    nifa2d(:) = 0.0_kind_phys
                 end if
             end if
 
@@ -216,10 +222,6 @@ contains
             where (nifa <= 0.0_kind_phys)
                 nifa = nain1 * 0.01_kind_phys
             end where
-
-            ! Flip upside down to be consistent with CAM-SIMA. Index 1 is at the top of atmosphere.
-            nwfa(:, :) = nwfa(:, pver:1:-1)
-            nifa(:, :) = nifa(:, pver:1:-1)
         end if
 
         new_th_r1(:, :, 1) = th(:, pver:1:-1)
