@@ -47,7 +47,6 @@ contains
         real(kind_phys), intent(in) :: val_land, val_ocean
         real(kind_phys) :: resolve_nc_value
 
-        character(100) :: cerr
         integer :: ierr
 
         select case (trim(adjustl(this % single_moment_nc_opt)))
@@ -56,7 +55,7 @@ contains
             case ('ocean')
                 resolve_nc_value = val_ocean
             case default
-                read(this % single_moment_nc_opt, *, iomsg=cerr, iostat=ierr) resolve_nc_value
+                read(this % single_moment_nc_opt, *, iostat=ierr) resolve_nc_value
 
                 if (ierr /= 0) then
                     resolve_nc_value = val_land
