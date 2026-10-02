@@ -27,6 +27,11 @@
     <scheme>wet_to_dry_cloud_ice</scheme>
     <scheme>wet_to_dry_snow</scheme>
     <scheme>wet_to_dry_graupel</scheme>
+    <scheme>wet_to_dry_cloud_liquid_water_number_concentration</scheme>
+    <scheme>wet_to_dry_rain_number_concentration</scheme>
+    <scheme>wet_to_dry_cloud_ice_number_concentration</scheme>
+    <scheme>wet_to_dry_snow_number_concentration</scheme>
+    <scheme>wet_to_dry_graupel_number_concentration</scheme>
 
     <scheme>mmm_physics_compat</scheme>
 
@@ -126,6 +131,11 @@
     <scheme>dry_to_wet_cloud_ice</scheme>
     <scheme>dry_to_wet_snow</scheme>
     <scheme>dry_to_wet_graupel</scheme>
+    <scheme>dry_to_wet_cloud_liquid_water_number_concentration</scheme>
+    <scheme>dry_to_wet_rain_number_concentration</scheme>
+    <scheme>dry_to_wet_cloud_ice_number_concentration</scheme>
+    <scheme>dry_to_wet_snow_number_concentration</scheme>
+    <scheme>dry_to_wet_graupel_number_concentration</scheme>
     <scheme>qneg</scheme>
     <scheme>geopotential_temp</scheme>
 
